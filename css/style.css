@@ -8,4 +8,63 @@
 html, body {
   height: 100%;
   width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#page1 {
+  width: 100%;
+  background-color: blue;
+}
+#page1 #nav {
+  background-color: bisque;
+  height: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#page1 #nav #logo {
+  padding: none;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+#page1 #nav #innernav {
+  background-color: aqua;
+  width: 70%;
+  height: 80px;
+  margin-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+#page1 #nav #innernav h1 {
+  font-size: 20px;
+}
+#page1 #nav #innernav img {
+  height: 35px;
+}
+#page1 #para1 {
+  background-color: rgb(7, 116, 116);
+  height: 500px;
+  width: 700px;
+  padding: 30px;
+}
+#page1 #para1 h2 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+#page1 #para1 h1 {
+  font-size: 60px;
+  margin-bottom: 8px;
+  border: 2px solid linear-gradient(to right, black 20%, transparent);
+}
+#page1 #para1 p {
+  font-size: 20px;
+  line-height: 1;
 }/*# sourceMappingURL=style.css.map */
