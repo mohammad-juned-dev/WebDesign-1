@@ -5,7 +5,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -13,7 +14,9 @@ html, body {
 
 #page1 {
   width: 100%;
+  height: 100%;
   background-color: blue;
+  position: relative;
 }
 #page1 #nav {
   background-color: bisque;
@@ -45,15 +48,29 @@ html, body {
 }
 #page1 #nav #innernav h1 {
   font-size: 20px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+#page1 #nav #innernav h1:hover {
+  text-decoration: underline;
 }
 #page1 #nav #innernav img {
   height: 35px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+#page1 #nav #innernav img:hover {
+  cursor: pointer;
 }
 #page1 #para1 {
   background-color: rgb(7, 116, 116);
-  height: 500px;
+  height: 400px;
   width: 700px;
   padding: 30px;
+  margin-top: 150px;
+  margin-left: 100px;
+  position: absolute;
 }
 #page1 #para1 h2 {
   font-size: 25px;
@@ -62,9 +79,204 @@ html, body {
 #page1 #para1 h1 {
   font-size: 60px;
   margin-bottom: 8px;
-  border: 2px solid linear-gradient(to right, black 20%, transparent);
+}
+#page1 #para1 #border {
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, blue), color-stop(30%, pink), to(transparent));
+  background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+  height: 5px;
+  border-radius: 50px;
+  width: 400px;
+  margin-bottom: 8px;
 }
 #page1 #para1 p {
   font-size: 20px;
   line-height: 1;
+  width: 600px;
+}
+#page1 #card1 {
+  height: 450px;
+  width: 300px;
+  background-color: blueviolet;
+  position: absolute;
+  margin-left: 1050px;
+  margin-top: 125px;
+  border-radius: 50px;
+}
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  background-color: cadetblue;
+  position: relative;
+}
+#page2 #para1 {
+  background-color: rgb(7, 116, 116);
+  height: 400px;
+  width: 700px;
+  padding: 30px;
+  margin-top: 150px;
+  margin-left: 100px;
+  position: absolute;
+}
+#page2 #para1 h2 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+#page2 #para1 h1 {
+  font-size: 60px;
+  margin-bottom: 8px;
+}
+#page2 #para1 #border {
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, blue), color-stop(30%, pink), to(transparent));
+  background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+  height: 5px;
+  border-radius: 50px;
+  width: 400px;
+  margin-bottom: 8px;
+}
+#page2 #para1 p {
+  font-size: 20px;
+  line-height: 1;
+  width: 600px;
+}
+#page2 #para1 button {
+  padding: 8px 15px;
+  border-radius: 50px;
+  border: 2px solid black;
+  margin-top: 38px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+#page2 .sidebox {
+  height: 200px;
+  width: 200px;
+  background-color: coral;
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1a1d21, #121519);
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+#page2 .sidebox img {
+  height: 80px;
+  margin-bottom: 10px;
+  -webkit-filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
+          filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
+}
+#page2 .sidebox h3 {
+  color: #a0a0a0;
+  margin-bottom: 10px;
+}
+#page2 .sidebox p {
+  color: #a0a0a0;
+  font-size: 12px;
+}
+#page2 #sidebox1 {
+  margin-left: 900px;
+  margin-top: 120px;
+}
+#page2 #sidebox2 {
+  margin-left: 1130px;
+  margin-top: 170px;
+}
+#page2 #sidebox3 {
+  margin-left: 900px;
+  margin-top: 350px;
+}
+#page2 #sidebox4 {
+  margin-left: 1130px;
+  margin-top: 400px;
+}
+
+#page3 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(90, 9, 90);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#page3 #main-img-page3 {
+  height: 500px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  clip-path: inset(0 0 7% 0);
+  border-radius: 15px;
+}
+#page3 #para1 {
+  display: block;
+  background-color: rgb(7, 116, 116);
+  height: 530px;
+  max-width: 700px;
+  padding: 30px;
+  margin-top: 50px;
+  margin-left: 250px;
+  position: relative;
+  display: block;
+}
+#page3 #para1 h2 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+#page3 #para1 h1 {
+  font-size: 60px;
+  margin-bottom: 8px;
+}
+#page3 #para1 #border {
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, blue), color-stop(30%, pink), to(transparent));
+  background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+  height: 5px;
+  border-radius: 50px;
+  width: 400px;
+  margin-bottom: 8px;
+}
+#page3 #para1 #pty {
+  font-size: 20px;
+  line-height: 1;
+  width: 600px;
+}
+#page3 #para1 #page3-para-blocks {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+#page3 #para1 #page3-para-blocks .parablocks {
+  height: 200px;
+  width: 200px;
+  background-color: coral;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(145deg, #1a1d21, #121519);
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+#page3 #para1 #page3-para-blocks .parablocks img {
+  height: 80px;
+  margin-bottom: 10px;
+  -webkit-filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
+          filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
+}
+#page3 #para1 #page3-para-blocks .parablocks h3 {
+  color: #a0a0a0;
+  margin-bottom: 10px;
+}
+#page3 #para1 #page3-para-blocks .parablocks p {
+  color: #a0a0a0;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

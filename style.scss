@@ -1,65 +1,289 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html,body{
+
+html,
+body {
     height: 100%;
-    width:100% ;
+    width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#page1{
+
+#page1 {
     width: 100%;
+    height: 100%;
     background-color: blue;
-    #nav{
+    position: relative;
+
+    #nav {
         background-color: bisque;
         height: 80px;
         width: 100%;
         display: flex;
-        #logo{
+
+        #logo {
             padding: none;
             font-size: 35px;
             margin-top: 20px;
             margin-left: 30px;
         }
-    #innernav{
-        background-color: aqua;
-        width: 70%;
-        height:80px ;
-        margin-left: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        h1{
-            font-size: 20px;
-            
-        }
-        img{
-            height: 35px;
-          
+
+        #innernav {
+            background-color: aqua;
+            width: 70%;
+            height: 80px;
+            margin-left: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            h1 {
+                font-size: 20px;
+                transition: all ease 0.5s;
+                cursor: pointer;
+            }
+
+            h1:hover {
+                text-decoration: underline;
+            }
+
+            img {
+                height: 35px;
+                transition: all ease 0.5s;
+            }
+
+            img:hover {
+                cursor: pointer;
+            }
         }
     }
+
+    #para1 {
+        background-color: rgb(7, 116, 116);
+        height: 400px;
+        width: 700px;
+        padding: 30px;
+        margin-top: 150px;
+        margin-left: 100px;
+        position: absolute;
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 8px;
+        }
+
+        #border {
+            background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+            height: 5px;
+            border-radius: 50px;
+            width: 400px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1;
+            width: 600px;
+        }
+    }
+
+    #card1 {
+        height: 450px;
+        width: 300px;
+        background-color: blueviolet;
+        position: absolute;
+        margin-left: 1050px;
+        margin-top: 125px;
+        border-radius: 50px;
+    }
 }
-#para1{
-    background-color: rgb(7, 116, 116);
-    
-height: 500px;
-width: 700px;
-padding: 30px;
-h2{
-    font-size: 25px;
-    margin-bottom: 8px;
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    background-color: cadetblue;
+    position: relative;
+
+    #para1 {
+        background-color: rgb(7, 116, 116);
+        height: 400px;
+        width: 700px;
+        padding: 30px;
+        margin-top: 150px;
+        margin-left: 100px;
+        position: absolute;
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 8px;
+        }
+
+        #border {
+            background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+            height: 5px;
+            border-radius: 50px;
+            width: 400px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1;
+            width: 600px;
+        }
+
+        button {
+            padding: 8px 15px;
+            border-radius: 50px;
+            border: 2px solid black;
+            margin-top: 38px;
+            transition: all ease 0.5s;
+            cursor: pointer;
+        }
+    }
+
+    .sidebox {
+        height: 200px;
+        width: 200px;
+        background-color: coral;
+        position: absolute;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        background: linear-gradient(145deg, #1a1d21, #121519);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+        img {
+            height: 80px;
+            margin-bottom: 10px;
+            filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
+        }
+
+        h3 {
+            color: #a0a0a0;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #a0a0a0;
+            font-size: 12px;
+        }
+    }
+
+    #sidebox1 {
+        margin-left: 900px;
+        margin-top: 120px;
+    }
+
+    #sidebox2 {
+        margin-left: 1130px;
+        margin-top: 170px;
+    }
+
+    #sidebox3 {
+        margin-left: 900px;
+        margin-top: 350px;
+    }
+
+    #sidebox4 {
+        margin-left: 1130px;
+        margin-top: 400px;
+    }
 }
-h1{
-    font-size: 60px;
-    margin-bottom: 8px;
-    // border-bottom: 2px solid ;
-    border:2px solid linear-gradient(to right ,black 20% , transparent ) ;
-    
-}
-p{
-    font-size: 20px;
-    line-height: 1;
-}
-}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(90, 9, 90);
+display: flex;
+align-items: center;
+justify-content: center;
+
+    #main-img-page3{
+       height: 500px;
+       width: 400px;
+      object-fit: cover;
+clip-path: inset(0 0 7% 0);
+       border-radius: 15px;
+    }
+    #para1 {
+         display: block;
+        background-color: rgb(7, 116, 116);
+        height: 530px;
+         max-width:700px ;
+        padding: 30px;
+        margin-top: 50px;
+        margin-left: 250px;
+        position: relative;
+         display: block;
+        h2 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 8px;
+        }
+
+        #border {
+            background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+            height: 5px;
+            border-radius: 50px;
+            width: 400px;
+            margin-bottom: 8px;
+        }
+
+        #pty {
+            font-size: 20px;
+            line-height: 1;
+            width: 600px;
+        }
+
+        #page3-para-blocks {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .parablocks {
+                height: 200px;
+                width: 200px;
+                background-color: coral;
+                text-align: center;
+                padding: 10px;
+                background: linear-gradient(145deg, #1a1d21, #121519);
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+                img {
+                    height: 80px;
+                    margin-bottom: 10px;
+                    filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
+                }
+
+                h3 {
+                    color: #a0a0a0;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: #a0a0a0;
+                    font-size: 12px;
+
+                }
+            }
+        }
+    }
 }
