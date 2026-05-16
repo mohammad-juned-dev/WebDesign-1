@@ -12,18 +12,19 @@ body {
 }
 
 #page1 {
+    background: radial-gradient(circle at 30% 50%, #1a1a1a 0%, #0a0a0a 100%);
     width: 100%;
     height: 100%;
-    background-color: blue;
     position: relative;
 
     #nav {
-        background-color: bisque;
+        background-color: transparent;
         height: 80px;
         width: 100%;
         display: flex;
 
         #logo {
+            color: #068e95;
             padding: none;
             font-size: 35px;
             margin-top: 20px;
@@ -31,7 +32,7 @@ body {
         }
 
         #innernav {
-            background-color: aqua;
+            background-color: transparent;
             width: 70%;
             height: 80px;
             margin-left: 150px;
@@ -40,6 +41,7 @@ body {
             justify-content: space-around;
 
             h1 {
+                color: #068e95;
                 font-size: 20px;
                 transition: all ease 0.5s;
                 cursor: pointer;
@@ -50,18 +52,19 @@ body {
             }
 
             img {
+                filter: invert(41%) sepia(87%) saturate(583%) hue-rotate(134deg) brightness(89%) contrast(96%);
                 height: 35px;
                 transition: all ease 0.5s;
             }
 
             img:hover {
                 cursor: pointer;
+                scale: 1.1;
             }
         }
     }
 
     #para1 {
-        background-color: rgb(7, 116, 116);
         height: 400px;
         width: 700px;
         padding: 30px;
@@ -70,17 +73,23 @@ body {
         position: absolute;
 
         h2 {
+            color: #068e95;
             font-size: 25px;
             margin-bottom: 8px;
         }
 
         h1 {
+            color: #ffffff;
             font-size: 60px;
             margin-bottom: 8px;
+
+            span {
+                color: #068e95;
+            }
         }
 
         #border {
-            background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+            background: linear-gradient(to right, #068e95 40%, #068e95 30%, transparent);
             height: 5px;
             border-radius: 50px;
             width: 400px;
@@ -88,6 +97,7 @@ body {
         }
 
         p {
+            color: #ffffff;
             font-size: 20px;
             line-height: 1;
             width: 600px;
@@ -97,22 +107,34 @@ body {
     #card1 {
         height: 450px;
         width: 300px;
-        background-color: blueviolet;
+
         position: absolute;
         margin-left: 1050px;
         margin-top: 125px;
-        border-radius: 50px;
+        border-radius: 40px;
+
+        box-shadow:
+            35px 35px 40px rgba(0, 194, 203, 0.3),
+            0 0 50px rgba(0, 194, 203, 0.3);
+        background-image: url('../page1_img.jpg');
+        background-blend-mode: multiply;
+        filter: brightness(0.85) contrast(1.2) hue-rotate(10deg) saturate(0.8);
+        filter: sepia(1) hue-rotate(145deg) saturate(3) brightness(0.8) contrast(1.1);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        border: 1px solid rgba(0, 194, 203, 0.3);
     }
 }
+
 
 #page2 {
     height: 100%;
     width: 100%;
-    background-color: cadetblue;
+    background: radial-gradient(circle at 30% 50%, #1a1a1a 0%, #0a0a0a 100%);
     position: relative;
 
     #para1 {
-        background-color: rgb(7, 116, 116);
         height: 400px;
         width: 700px;
         padding: 30px;
@@ -123,22 +145,30 @@ body {
         h2 {
             font-size: 25px;
             margin-bottom: 8px;
+            color: #068e95;
         }
 
         h1 {
             font-size: 60px;
             margin-bottom: 8px;
+            color: #ffffff;
+
+            span {
+                color: #068e95;
+            }
         }
 
         #border {
-            background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+            background: linear-gradient(to right, #068e95 40%, #068e95 30%, transparent);
             height: 5px;
             border-radius: 50px;
             width: 400px;
             margin-bottom: 8px;
+
         }
 
         p {
+            color: #ffffff;
             font-size: 20px;
             line-height: 1;
             width: 600px;
@@ -151,6 +181,7 @@ body {
             margin-top: 38px;
             transition: all ease 0.5s;
             cursor: pointer;
+            background-color: #068e95;
         }
     }
 
@@ -168,7 +199,7 @@ body {
         img {
             height: 80px;
             margin-bottom: 10px;
-            filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
+            filter: invert(41%) sepia(87%) saturate(583%) hue-rotate(134deg) brightness(89%) contrast(96%);
         }
 
         h3 {
@@ -205,41 +236,51 @@ body {
 
 #page3 {
     height: 100%;
-    width: 100%;
-    background-color: rgb(90, 9, 90);
-display: flex;
-align-items: center;
-justify-content: center;
+    background: radial-gradient(circle at 30% 50%, #1a1a1a 0%, #0a0a0a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    #main-img-page3{
-       height: 500px;
-       width: 400px;
-      object-fit: cover;
-clip-path: inset(0 0 7% 0);
-       border-radius: 15px;
+    #main-img-page3 {
+        height: 500px;
+        width: 400px;
+        object-fit: cover;
+        clip-path: inset(0 0 7% 0);
+        border-radius: 15px;
+        filter: grayscale(100%) brightness(0.9) contrast(1.05);
+        backdrop-filter: blur(20px);
+        mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
     }
+
     #para1 {
-         display: block;
-        background-color: rgb(7, 116, 116);
+        display: block;
         height: 530px;
-         max-width:700px ;
+        max-width: 700px;
         padding: 30px;
         margin-top: 50px;
         margin-left: 250px;
         position: relative;
-         display: block;
+        display: block;
+
         h2 {
             font-size: 25px;
             margin-bottom: 8px;
+            color: #068e95;
         }
 
         h1 {
+            color: #ffffff;
             font-size: 60px;
             margin-bottom: 8px;
+
+            span {
+                color: #068e95;
+            }
         }
 
         #border {
-            background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+            background: linear-gradient(to right, #068e95 40%, #068e95 30%, transparent);
             height: 5px;
             border-radius: 50px;
             width: 400px;
@@ -247,6 +288,7 @@ clip-path: inset(0 0 7% 0);
         }
 
         #pty {
+            color: #ffffff;
             font-size: 20px;
             line-height: 1;
             width: 600px;
@@ -270,7 +312,7 @@ clip-path: inset(0 0 7% 0);
                 img {
                     height: 80px;
                     margin-bottom: 10px;
-                    filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
+                    filter: invert(41%) sepia(87%) saturate(583%) hue-rotate(134deg) brightness(89%) contrast(96%);
                 }
 
                 h3 {

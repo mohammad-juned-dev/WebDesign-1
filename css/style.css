@@ -13,13 +13,13 @@ body {
 }
 
 #page1 {
+  background: radial-gradient(circle at 30% 50%, #1a1a1a 0%, #0a0a0a 100%);
   width: 100%;
   height: 100%;
-  background-color: blue;
   position: relative;
 }
 #page1 #nav {
-  background-color: bisque;
+  background-color: transparent;
   height: 80px;
   width: 100%;
   display: -webkit-box;
@@ -27,13 +27,14 @@ body {
   display: flex;
 }
 #page1 #nav #logo {
+  color: #068e95;
   padding: none;
   font-size: 35px;
   margin-top: 20px;
   margin-left: 30px;
 }
 #page1 #nav #innernav {
-  background-color: aqua;
+  background-color: transparent;
   width: 70%;
   height: 80px;
   margin-left: 150px;
@@ -47,6 +48,7 @@ body {
       justify-content: space-around;
 }
 #page1 #nav #innernav h1 {
+  color: #068e95;
   font-size: 20px;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -56,15 +58,17 @@ body {
   text-decoration: underline;
 }
 #page1 #nav #innernav img {
+  -webkit-filter: invert(41%) sepia(87%) saturate(583%) hue-rotate(134deg) brightness(89%) contrast(96%);
+          filter: invert(41%) sepia(87%) saturate(583%) hue-rotate(134deg) brightness(89%) contrast(96%);
   height: 35px;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 #page1 #nav #innernav img:hover {
   cursor: pointer;
+  scale: 1.1;
 }
 #page1 #para1 {
-  background-color: rgb(7, 116, 116);
   height: 400px;
   width: 700px;
   padding: 30px;
@@ -73,22 +77,28 @@ body {
   position: absolute;
 }
 #page1 #para1 h2 {
+  color: #068e95;
   font-size: 25px;
   margin-bottom: 8px;
 }
 #page1 #para1 h1 {
+  color: #ffffff;
   font-size: 60px;
   margin-bottom: 8px;
 }
+#page1 #para1 h1 span {
+  color: #068e95;
+}
 #page1 #para1 #border {
-  background: -webkit-gradient(linear, left top, right top, color-stop(40%, blue), color-stop(30%, pink), to(transparent));
-  background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #068e95), color-stop(30%, #068e95), to(transparent));
+  background: linear-gradient(to right, #068e95 40%, #068e95 30%, transparent);
   height: 5px;
   border-radius: 50px;
   width: 400px;
   margin-bottom: 8px;
 }
 #page1 #para1 p {
+  color: #ffffff;
   font-size: 20px;
   line-height: 1;
   width: 600px;
@@ -96,21 +106,31 @@ body {
 #page1 #card1 {
   height: 450px;
   width: 300px;
-  background-color: blueviolet;
   position: absolute;
   margin-left: 1050px;
   margin-top: 125px;
-  border-radius: 50px;
+  border-radius: 40px;
+  -webkit-box-shadow: 35px 35px 40px rgba(0, 194, 203, 0.3), 0 0 50px rgba(0, 194, 203, 0.3);
+          box-shadow: 35px 35px 40px rgba(0, 194, 203, 0.3), 0 0 50px rgba(0, 194, 203, 0.3);
+  background-image: url("../page1_img.jpg");
+  background-blend-mode: multiply;
+  -webkit-filter: brightness(0.85) contrast(1.2) hue-rotate(10deg) saturate(0.8);
+          filter: brightness(0.85) contrast(1.2) hue-rotate(10deg) saturate(0.8);
+  -webkit-filter: sepia(1) hue-rotate(145deg) saturate(3) brightness(0.8) contrast(1.1);
+          filter: sepia(1) hue-rotate(145deg) saturate(3) brightness(0.8) contrast(1.1);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border: 1px solid rgba(0, 194, 203, 0.3);
 }
 
 #page2 {
   height: 100%;
   width: 100%;
-  background-color: cadetblue;
+  background: radial-gradient(circle at 30% 50%, #1a1a1a 0%, #0a0a0a 100%);
   position: relative;
 }
 #page2 #para1 {
-  background-color: rgb(7, 116, 116);
   height: 400px;
   width: 700px;
   padding: 30px;
@@ -121,20 +141,26 @@ body {
 #page2 #para1 h2 {
   font-size: 25px;
   margin-bottom: 8px;
+  color: #068e95;
 }
 #page2 #para1 h1 {
   font-size: 60px;
   margin-bottom: 8px;
+  color: #ffffff;
+}
+#page2 #para1 h1 span {
+  color: #068e95;
 }
 #page2 #para1 #border {
-  background: -webkit-gradient(linear, left top, right top, color-stop(40%, blue), color-stop(30%, pink), to(transparent));
-  background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #068e95), color-stop(30%, #068e95), to(transparent));
+  background: linear-gradient(to right, #068e95 40%, #068e95 30%, transparent);
   height: 5px;
   border-radius: 50px;
   width: 400px;
   margin-bottom: 8px;
 }
 #page2 #para1 p {
+  color: #ffffff;
   font-size: 20px;
   line-height: 1;
   width: 600px;
@@ -147,6 +173,7 @@ body {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   cursor: pointer;
+  background-color: #068e95;
 }
 #page2 .sidebox {
   height: 200px;
@@ -163,8 +190,8 @@ body {
 #page2 .sidebox img {
   height: 80px;
   margin-bottom: 10px;
-  -webkit-filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
-          filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
+  -webkit-filter: invert(41%) sepia(87%) saturate(583%) hue-rotate(134deg) brightness(89%) contrast(96%);
+          filter: invert(41%) sepia(87%) saturate(583%) hue-rotate(134deg) brightness(89%) contrast(96%);
 }
 #page2 .sidebox h3 {
   color: #a0a0a0;
@@ -193,8 +220,7 @@ body {
 
 #page3 {
   height: 100%;
-  width: 100%;
-  background-color: rgb(90, 9, 90);
+  background: radial-gradient(circle at 30% 50%, #1a1a1a 0%, #0a0a0a 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,10 +238,14 @@ body {
      object-fit: cover;
   clip-path: inset(0 0 7% 0);
   border-radius: 15px;
+  -webkit-filter: grayscale(100%) brightness(0.9) contrast(1.05);
+          filter: grayscale(100%) brightness(0.9) contrast(1.05);
+  backdrop-filter: blur(20px);
+  mask-image: radial-gradient(circle at center, rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: radial-gradient(circle at center, rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
 }
 #page3 #para1 {
   display: block;
-  background-color: rgb(7, 116, 116);
   height: 530px;
   max-width: 700px;
   padding: 30px;
@@ -227,20 +257,26 @@ body {
 #page3 #para1 h2 {
   font-size: 25px;
   margin-bottom: 8px;
+  color: #068e95;
 }
 #page3 #para1 h1 {
+  color: #ffffff;
   font-size: 60px;
   margin-bottom: 8px;
 }
+#page3 #para1 h1 span {
+  color: #068e95;
+}
 #page3 #para1 #border {
-  background: -webkit-gradient(linear, left top, right top, color-stop(40%, blue), color-stop(30%, pink), to(transparent));
-  background: linear-gradient(to right, blue 40%, pink 30%, transparent);
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #068e95), color-stop(30%, #068e95), to(transparent));
+  background: linear-gradient(to right, #068e95 40%, #068e95 30%, transparent);
   height: 5px;
   border-radius: 50px;
   width: 400px;
   margin-bottom: 8px;
 }
 #page3 #para1 #pty {
+  color: #ffffff;
   font-size: 20px;
   line-height: 1;
   width: 600px;
@@ -269,8 +305,8 @@ body {
 #page3 #para1 #page3-para-blocks .parablocks img {
   height: 80px;
   margin-bottom: 10px;
-  -webkit-filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
-          filter: invert(58%) sepia(88%) saturate(415%) hue-rotate(130deg) brightness(95%) contrast(90%);
+  -webkit-filter: invert(41%) sepia(87%) saturate(583%) hue-rotate(134deg) brightness(89%) contrast(96%);
+          filter: invert(41%) sepia(87%) saturate(583%) hue-rotate(134deg) brightness(89%) contrast(96%);
 }
 #page3 #para1 #page3-para-blocks .parablocks h3 {
   color: #a0a0a0;
